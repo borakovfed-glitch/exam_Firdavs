@@ -8,6 +8,7 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-emerald-100: oklch(95% 0.052 163.051);
@@ -286,8 +287,20 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-items-center {
+    justify-items: center;
+  }
+  .justify-items-end {
+    justify-items: end;
+  }
+  .gap-0 {
+    gap: 0px;
+  }
   .gap-1 {
     gap: var(--spacing);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -307,11 +320,26 @@
   .gap-15 {
     gap: calc(var(--spacing) * 15);
   }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
+  }
   .gap-30 {
     gap: calc(var(--spacing) * 30);
   }
+  .gap-32 {
+    gap: calc(var(--spacing) * 32);
+  }
   .gap-40 {
     gap: calc(var(--spacing) * 40);
+  }
+  .gap-x-7 {
+    column-gap: calc(var(--spacing) * 7);
+  }
+  .gap-x-9 {
+    column-gap: calc(var(--spacing) * 9);
+  }
+  .gap-x-15 {
+    column-gap: calc(var(--spacing) * 15);
   }
   .gap-y-0 {
     row-gap: 0px;
@@ -351,11 +379,17 @@
   .bg-\[\#FFF7F4\] {
     background-color: #FFF7F4;
   }
+  .bg-\[\[\#FFF7F4\]\] {
+    background-color: [#FFF7F4];
+  }
   .bg-\[wh\] {
     background-color: wh;
   }
   .bg-\[white\] {
     background-color: white;
+  }
+  .bg-amber-50 {
+    background-color: var(--color-amber-50);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -409,8 +443,17 @@
   .px-\[40px\] {
     padding-inline: 40px;
   }
+  .px-\[50px\] {
+    padding-inline: 50px;
+  }
+  .px-\[60px\] {
+    padding-inline: 60px;
+  }
   .px-\[70px\] {
     padding-inline: 70px;
+  }
+  .px-\[80px\] {
+    padding-inline: 80px;
   }
   .px-\[100px\] {
     padding-inline: 100px;
@@ -432,6 +475,9 @@
   }
   .py-\[30px\] {
     padding-block: 30px;
+  }
+  .py-\[40px\] {
+    padding-block: 40px;
   }
   .py-\[50px\] {
     padding-block: 50px;
@@ -739,6 +785,9 @@
     .lg\:w-\[270px\] {
       width: 270px;
     }
+    .lg\:w-\[470px\] {
+      width: 470px;
+    }
     .lg\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -754,8 +803,23 @@
     .lg\:p-\[100px\] {
       padding: 100px;
     }
+    .lg\:px-\[0px\] {
+      padding-inline: 0px;
+    }
+    .lg\:px-\[60px\] {
+      padding-inline: 60px;
+    }
+    .lg\:px-\[70px\] {
+      padding-inline: 70px;
+    }
+    .lg\:px-\[90px\] {
+      padding-inline: 90px;
+    }
     .lg\:px-\[100px\] {
       padding-inline: 100px;
+    }
+    .lg\:py-\[20px\] {
+      padding-block: 20px;
     }
     .lg\:py-\[100px\] {
       padding-block: 100px;
